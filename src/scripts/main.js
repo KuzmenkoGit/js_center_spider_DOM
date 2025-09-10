@@ -3,7 +3,11 @@
 const wall = document.querySelector('.wall');
 const spider = document.querySelector('.spider');
 
+const x = (wall.clientWidth - spider.clientWidth) / 2;
+const y = (wall.clientHeight - spider.clientHeight) / 2;
+
 wall.style.position = 'relative';
-spider.style.top = '50%';
-spider.style.left = '50%';
+spider.style.position = 'absolute';
+spider.style.top = `${Math.round(y)}px`;
+spider.style.left = `${Math.round(x)}px`;
 spider.style.transform = 'translate(-50%, -50%)';
