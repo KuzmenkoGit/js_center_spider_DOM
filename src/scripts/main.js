@@ -10,4 +10,4 @@ wall.style.position = 'relative';
 spider.style.position = 'absolute';
 spider.style.top = `${Math.round(y)}px`;
 spider.style.left = `${Math.round(x)}px`;
-spider.style.transform = 'translate(-50%, -50%)';
+spider.style.transform = `translate(${-Math.round(x)}, ${-Math.round(y)})`;
